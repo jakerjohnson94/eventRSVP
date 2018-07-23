@@ -1,0 +1,22 @@
+include head.pug
+-const attending = responses.filter(a=> a.isAttending ==='yes')
+-const notAttending = responses.filter(a=> a.isAttending ==='no')
+h1 Guest List:
+h2 Attending:
+each person in attending
+  h4= `Name: ${person.name}`
+  h4= `Email: ${person.email}`
+  h4= `Number of Guests: ${person.numOfGuests}`
+  br
+br
+br 
+h2 Not Attending:
+each person in notAttending
+  h4= `Name: ${person.name}`
+  h4= `Email: ${person.email}`
+  h4= `Number of Guests: ${person.numOfGuests}`
+  br
+a(href="/") Back
+
+
+

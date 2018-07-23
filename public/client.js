@@ -1,7 +1,7 @@
 const nameField = document.getElementById('name');
 const emailField = document.getElementById('email');
-const attendingField = document.querySelectorAll('.attending');
-const numOfGuestsField = document.getElementById('guestNum');
+const attendingField = document.querySelectorAll('.isAttending');
+const numOfGuestsField = document.getElementById('numOfGuests');
 const submitBtn = document.getElementById('submitBtn');
 let rsvp;
 const getRadios = function(arr) {

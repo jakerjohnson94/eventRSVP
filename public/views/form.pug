@@ -8,16 +8,16 @@
 
     fieldset
       label
-        input#attendingYes(type="radio", class='attending', name="attending", value='yes')
+        input#attendingYes(type="radio", class='isAttending', name="isAttending", value='yes')
         span Yes, I am Attending
       br
       label
-        input#attendingNo(type="radio", class='attending', name="attending", value='no')
+        input#attendingNo(type="radio", class='isAttending', name="isAttending", value='no')
         span No, I cannot Attend
 
 
 
-    select#guestNum(name="guestNum")
+    select#guestNum(name="numOfGuests")
       option(value='1') 1
       option(value='2') 2
       option(value='3') 3
