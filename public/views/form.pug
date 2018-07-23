@@ -1,0 +1,29 @@
+.formWrapper
+  form(method='post', action='/reply')
+    label(for='name') Name
+    input#name(type="text", name="name")
+ 
+    label(for='email') Email
+    input#email(type="email", name="email")
+
+    fieldset
+      label
+        input#attendingYes(type="radio", class='attending', name="attending", value='yes')
+        span Yes, I am Attending
+      br
+      label
+        input#attendingNo(type="radio", class='attending', name="attending", value='no')
+        span No, I cannot Attend
+
+
+
+    select#guestNum(name="guestNum")
+      option(value='1') 1
+      option(value='2') 2
+      option(value='3') 3
+      option(value='4') 4
+      option(value='5') 5
+      option(value='6') 6
+      option(value='7') 7
+      option(value='8') 8
+    button#submitBtn(type="submit") Submit
